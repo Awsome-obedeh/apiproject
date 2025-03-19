@@ -1,0 +1,25 @@
+First install nodejs server from 
+after running git clone
+run git init
+then downlaod
+https://nodejs.org/en/download
+
+second 
+Initailize a nodejs application
+mkdir api-project
+cd api-apiproject
+npm init -y
+npm install express cors body-parser
+
+STEP 3
+create a file 'server.js'
+
+step 4; to run the project 
+node server.js
+
+step 5
+Download postman
+https://www.postman.com/downloads/
+
+Start testing your API's
+
