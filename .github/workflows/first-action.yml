@@ -1,1 +1,22 @@
+name: Run Tests
+
+on: [push] # Every time code is pushed, start the robot.
+
+jobs: # Group of tasks for the robot to run.
+  test:
+    runs-on: ubuntu-latest
+    steps: # The robot’s to-do list, similar to jenkins stages:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
 
